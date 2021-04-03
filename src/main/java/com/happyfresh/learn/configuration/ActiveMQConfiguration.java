@@ -1,4 +1,4 @@
-package com.happyfresh.learn;
+package com.happyfresh.learn.configuration;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.activemq.command.ActiveMQQueue;

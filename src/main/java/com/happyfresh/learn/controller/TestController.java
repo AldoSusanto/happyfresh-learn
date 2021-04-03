@@ -1,4 +1,4 @@
-package com.happyfresh.learn;
+package com.happyfresh.learn.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.core.JmsTemplate;
@@ -30,7 +30,7 @@ public class TestController {
 
     @GetMapping("/kafka/{message}")
     public String testAPIKafka(@PathVariable String message){
-//        kafkaTemplate.send(TOPIC, message); // Default configs on the kafka (localhost:9092)
+//        kafkaTemplate.send(TOPIC, message); // Default configs on the kafka, no configuration class (localhost:9092)
         return message;
     }
 
