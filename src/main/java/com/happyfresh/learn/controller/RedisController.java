@@ -31,7 +31,7 @@ public class RedisController {
                 .nationality("Indo")
                 .build();
 
-        log.error("Saving to DB {}", person.toString());
+        log.info("Saving to DB {}", person.toString());
         personRepository.save(person);
         return person.toString();
     }
